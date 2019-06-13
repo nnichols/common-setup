@@ -16,6 +16,7 @@ Common Software:
   - [VLC](https://www.videolan.org/vlc/index.html)
   - [XSplit](https://www.xsplit.com/)
   - [HitFilm 4 Express](https://fxhome.com/hitfilm-express)
+  - [Audacity](https://www.audacityteam.org/)
 
 Chrome Plugin Lists:
   - AdBlock
