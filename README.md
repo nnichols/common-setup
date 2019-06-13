@@ -7,6 +7,15 @@ Common Software:
   - [Slack](https://slack.com/)
   - [dBeaver](https://dbeaver.io/)
   - [Postman](https://www.getpostman.com/)
+  - [Steam](https://store.steampowered.com/)
+  - [Battle.net Installer](https://www.blizzard.com/en-us/?ref=battle.net)
+  - [Git Bash](https://gitforwindows.org/)
+  - [Kleopatra](https://www.openpgp.org/software/kleopatra/)
+  - [MTG Arena](https://magic.wizards.com/en/mtgarena)
+  - [SpyBot](https://www.safer-networking.org/)
+  - [VLC](https://www.videolan.org/vlc/index.html)
+  - [XSplit](https://www.xsplit.com/)
+  - [HitFilm 4 Express](https://fxhome.com/hitfilm-express)
 
 Chrome Plugin Lists:
   - AdBlock
