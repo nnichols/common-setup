@@ -17,6 +17,7 @@
       "one-dark-ui"
       "city-lights-syntax"
     ]
+    titleBar: "custom"
   editor:
     autoIndentOnPaste: false
     showIndentGuide: true
@@ -26,6 +27,9 @@
   "highlight-selected":
     allowedCharactersToSelect: "$@%_"
   "linter-ui-default": {}
+  "lisp-paredit":
+    enabled: false
+    strict: false
   "markdown-preview":
     useGitHubStyle: true
   "one-dark-ui":
@@ -35,8 +39,7 @@
     leinPath: "/usr/local/bin/lein"
   "tool-bar":
     visible: false
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
 ".clojure.source":
