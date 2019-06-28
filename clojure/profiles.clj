@@ -1,7 +1,7 @@
 {:user {:plugin-repositories [["clojars" {:url "https://clojars.org/repo"}]]
         :dependencies [[pjstadig/humane-test-output "0.8.3"]
-		                   [proto-repl "0.3.1"]
-		                   [proto-repl-charts "0.3.2"]]
+		       [proto-repl "0.3.1"]
+		       [proto-repl-charts "0.3.2"]]
         :injections [(require 'pjstadig.humane-test-output)
                      (pjstadig.humane-test-output/activate!)]
 	    	:git-dependencies [["https://github.com/tobyhede/monger.git"]]
