@@ -14,9 +14,5 @@ alias ln='ln -i'
 
 alias greps='grep -rHni --color'
 
-alias stat='git status'
-alias status='git status'
-alias shove='git push -f'
-
 alias myip="curl http://ipecho.net/plain; echo"
 alias dir="pwd"
