@@ -16,9 +16,12 @@ Common Software:
 -   [MTG Arena](https://magic.wizards.com/en/mtgarena)
 -   [SpyBot](https://www.safer-networking.org/)
 -   [VLC](https://www.videolan.org/vlc/index.html)
--   [XSplit](https://www.xsplit.com/)
 -   [HitFilm 4 Express](https://fxhome.com/hitfilm-express)
 -   [Audacity](https://www.audacityteam.org/)
+-   [EmoTracker](https://emotracker.net/)
+-   [OBS StreamLabs](https://streamlabs.com/)
+-   [WSplit](http://www.speedrunslive.com/tools/)
+
 
 Chrome Plugin Lists:
 
@@ -38,8 +41,8 @@ Android Apps:
 -   Amazon Alexa
 -   Amazon Shopping
 -   Amtrak
+-   Authy
 -   Blizzard Authenticator
--   Google Authenticator
 -   BattleScribe
 -   Bitmoji
 -   BofA
@@ -52,6 +55,7 @@ Android Apps:
 -   Facetune
 -   Fitbit
 -   Groupon
+-   Instacart
 -   Instagram
 -   LastPass
 -   Lemonade
@@ -63,7 +67,6 @@ Android Apps:
 -   Facebook Messenger
 -   Netflix
 -   Ritual
--   Should I Answer?
 -   Slack
 -   Snapchat
 -   Spotify
