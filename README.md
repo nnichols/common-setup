@@ -4,7 +4,7 @@ Common config, settings files
 
 Common Software:
 
--   [Atom](https://atom.io/)
+-   [Visual Studio Code](https://code.visualstudio.com/)
 -   [Discord](https://discordapp.com/)
 -   [Slack](https://slack.com/)
 -   [dBeaver](https://dbeaver.io/)

@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Kimbie Dark",
+    "calva.paredit.defaultKeyMap": "none",
+    "editor.renderLineHighlight": "none",
+    "explorer.confirmDragAndDrop": false
+}
