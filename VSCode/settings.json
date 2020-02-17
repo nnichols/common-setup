@@ -1,6 +1,31 @@
 {
-    "workbench.colorTheme": "Kimbie Dark",
     "calva.paredit.defaultKeyMap": "none",
     "editor.renderLineHighlight": "none",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "tabagotchi.tabThreshold": 7,
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+    "markdown.extension.toc.githubCompatibility": true,
+    "calva.fmt.alignMapItems": true,
+    "calva.showDocstringInParameterHelp": true,
+    "calva.syncReplNamespaceToCurrentFile": true,
+    "[clojure]": {
+        "editor.defaultFormatter": "betterthantomorrow.calva"
+    },
+    "calva.prettyPrintingOptions": {
+        "enabled": false,
+        "printEngine": "pprint",
+        "width": 120
+    },
+    "calva.sendAsyncOutputTo": "Both",
+    "workbench.tree.indent": 12,
+    "calva.evalOnSave": true,
+    "calva.fmt.newIndentEngine": true,
+    "editor.wordSeparators": "`~!@#$%^&*()-_=+[{]}\\|;:'\",.<>/?",
+    "files.insertFinalNewline": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "FiraCode-Retina, Menlo, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "workbench.colorTheme": "Monokai Dimmed"
 }
