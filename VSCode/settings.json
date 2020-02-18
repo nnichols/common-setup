@@ -27,5 +27,7 @@
     "editor.fontLigatures": true,
     "editor.fontFamily": "FiraCode-Retina, Menlo, 'Courier New', monospace",
     "editor.fontSize": 13,
-    "workbench.colorTheme": "Monokai Dimmed"
+    "workbench.colorTheme": "Monokai Dimmed",
+    "git.autorefresh": false,
+    "git.branchSortOrder": "alphabetically"
 }
