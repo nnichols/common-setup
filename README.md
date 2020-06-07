@@ -21,6 +21,7 @@ Common Software:
 -   [EmoTracker](https://emotracker.net/)
 -   [OBS StreamLabs](https://streamlabs.com/)
 -   [WSplit](http://www.speedrunslive.com/tools/)
+-   [7Zip](https://www.7-zip.org/)
 
 
 Chrome Plugin Lists:
@@ -67,6 +68,7 @@ Android Apps:
 -   Facebook Messenger
 -   Netflix
 -   Ritual
+-   Signal
 -   Slack
 -   Snapchat
 -   Spotify
