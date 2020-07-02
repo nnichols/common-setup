@@ -22,6 +22,8 @@ Common Software:
 -   [OBS StreamLabs](https://streamlabs.com/)
 -   [WSplit](http://www.speedrunslive.com/tools/)
 -   [7Zip](https://www.7-zip.org/)
+-   [Anki Flashcards](https://apps.ankiweb.net/)
+-   [Brave](https://brave.com/)
 
 
 Chrome Plugin Lists:
