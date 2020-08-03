@@ -24,6 +24,7 @@ Common Software:
 -   [7Zip](https://www.7-zip.org/)
 -   [Anki Flashcards](https://apps.ankiweb.net/)
 -   [Brave](https://brave.com/)
+-   [Lens](https://github.com/lensapp/lens)
 
 
 Chrome Plugin Lists:
@@ -35,7 +36,6 @@ Chrome Plugin Lists:
 -   Grammarly
 -   HTTPS Everywhere
 -   LastPass
--   Password Alert
 -   Password Checkup
 
 Android Apps:
