@@ -18,3 +18,5 @@ _site
 .jekyll-metadata
 *.bkp
 *.DS_Store
+.calva
+.vscode
