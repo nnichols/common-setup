@@ -2,26 +2,51 @@
 
 if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
 
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+# get current branch in git repo
+function parse_git_branch() {
+	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+	if [ ! "${BRANCH}" == "" ]
+	then
+		STAT=`parse_git_dirty`
+		echo "[${BRANCH}${STAT}]"
+	else
+		echo ""
+	fi
 }
 
-parse_git_dirty() {
-  st=$(git status 2>/dev/null | tail -n 1)
-  if [[ $st == "" ]]; then
-    echo ''
-  elif [[ $st == "nothing to commit (working directory clean)" ]]; then
-    echo ''
-  elif [[ $st == 'nothing added to commit but untracked files present (use "git add" to track)' ]]; then
-    echo '?'
-  else
-    echo '*'
-  fi
+# get current status of git repo
+function parse_git_dirty {
+	status=`git status 2>&1 | tee`
+	dirty=`echo -n "${status}" 2> /dev/null | grep "modified:" &> /dev/null; echo "$?"`
+	untracked=`echo -n "${status}" 2> /dev/null | grep "Untracked files" &> /dev/null; echo "$?"`
+	ahead=`echo -n "${status}" 2> /dev/null | grep "Your branch is ahead of" &> /dev/null; echo "$?"`
+	newfile=`echo -n "${status}" 2> /dev/null | grep "new file:" &> /dev/null; echo "$?"`
+	renamed=`echo -n "${status}" 2> /dev/null | grep "renamed:" &> /dev/null; echo "$?"`
+	deleted=`echo -n "${status}" 2> /dev/null | grep "deleted:" &> /dev/null; echo "$?"`
+	bits=''
+	if [ "${renamed}" == "0" ]; then
+		bits=">${bits}"
+	fi
+	if [ "${ahead}" == "0" ]; then
+		bits="*${bits}"
+	fi
+	if [ "${newfile}" == "0" ]; then
+		bits="+${bits}"
+	fi
+	if [ "${untracked}" == "0" ]; then
+		bits="?${bits}"
+	fi
+	if [ "${deleted}" == "0" ]; then
+		bits="x${bits}"
+	fi
+	if [ "${dirty}" == "0" ]; then
+		bits="!${bits}"
+	fi
+	if [ ! "${bits}" == "" ]; then
+		echo " ${bits}"
+	else
+		echo ""
+	fi
 }
 
-SB_GREEN="\[\033[1;32m\]"
-SB_BLUE="\[\033[1;34m\]"
-SB_RED="\[\033[1;31m\]"
-SB_NOCOLOR="\[\033[0m\]"
-
-export PS1="$SB_GREEN\u@\h$SB_NOCOLOR: $SB_BLUE\w$SB_GREEN\$(parse_git_branch)$SB_RED\$(parse_git_dirty)$SB_NOCOLOR λ "
+export PS1="\[\e[1;32m\]\u\[\e[m\]\[\e[1;32m\]@\[\e[m\]\[\e[1;32m\]\h\[\e[m\]\[\e[1;32m\]:\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\`parse_git_branch\` \[\e[1;31m\]λ\[\e[m\] "
