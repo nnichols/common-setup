@@ -1,0 +1,3 @@
+android-platform-tools
+dbeaver-community
+font-fira-code
