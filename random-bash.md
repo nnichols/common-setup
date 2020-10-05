@@ -9,3 +9,17 @@ A collection of random, yet helpful things I've had to do with Bash.
 ```bash
 apm list --installed-bare | sort > package-list.txt
 ```
+
+### Homebrew
+
+-   Export a list of all packages
+
+```bash
+brew list | sort > homebrew_packages.txt
+```
+
+-   Export a list of all casks
+
+```bash
+brew cask list | sort > casks.txt
+```
