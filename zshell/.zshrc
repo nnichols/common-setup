@@ -50,3 +50,6 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/nnichols/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
+# GPG stuff
+export GPG_TTY=$(tty)
