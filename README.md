@@ -25,6 +25,7 @@ Common Software:
 - [Brave](https://brave.com/)
 - [Lens](https://github.com/lensapp/lens)
 - [Zoom](https://zoom.us/support/download)
+- [Spotify](https://www.spotify.com/us/download/other/)
 
 Chrome Plugin Lists:
 
