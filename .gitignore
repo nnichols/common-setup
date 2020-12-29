@@ -3,6 +3,7 @@ Gemfile.lock
 pom.xml.asc
 *.jar
 *.class
+*.swp
 /lib/
 /classes/
 /target/
