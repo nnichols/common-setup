@@ -24,6 +24,12 @@ brew list | sort > packages.txt
 brew cask list | sort > casks.txt
 ```
 
+### Export Brewfile
+
+```bash
+brew bundle dump
+```
+
 ### Update software installed by a cask
 
 ```bash
