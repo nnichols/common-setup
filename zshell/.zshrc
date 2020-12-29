@@ -46,6 +46,9 @@ alias greps='grep -rHni --color'
 alias stat='git status'
 alias status='git status'
 alias shove='git push -f'
+alias pull='git fetch --prune && git pull'
+alias repl='clojure -M:nrepl'
+alias saml='saml2aws login && eval $(saml2aws script)'
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # heroku autocomplete setup
