@@ -1,3 +1,0 @@
-dbeaver-community
-font-fira-code
-visual-studio-code
