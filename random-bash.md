@@ -33,5 +33,5 @@ brew bundle dump
 ### Update software installed by a cask
 
 ```bash
-brew cask upgrade dbeaver-community
+brew upgrade --cask dbeaver-community
 ```
