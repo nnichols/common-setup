@@ -49,6 +49,7 @@ alias shove='git push -f'
 alias pull='git fetch --prune && git pull'
 alias repl='clojure -M:nrepl'
 alias saml='saml2aws login && eval $(saml2aws script)'
+alias pull-all='for d in */; do cd $d; git stash; pull; cd ..; done'
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # heroku autocomplete setup
