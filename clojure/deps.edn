@@ -59,5 +59,6 @@
              :1.10.2   {:override-deps {org.clojure/clojure {:mvn/version "1.10.2"}}}
              :master   {:override-deps {org.clojure/clojure {:mvn/version "1.10.2"}}}
 
+             ;; requires https://graphviz.gitlab.io/download/
              :graph    {:deps      {org.clojure/tools.deps.graph {:mvn/version "1.0.46"}}
                         :main-opts ["-m" "clojure.tools.deps.graph"]}}}
