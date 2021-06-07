@@ -32,7 +32,7 @@ export UPDATE_ZSH_DAYS=30
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load?
-plugins=(git aws colored-man-pages command-not-found)
+plugins=(git aws colored-man-pages command-not-found colorize terraform osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -50,6 +50,9 @@ alias pull='git fetch --prune && git pull && git gc' # pull updates from remote,
 alias repl='clojure -M:nrepl'
 alias saml='saml2aws login && eval $(saml2aws script)' # Login to AWS with SAML provider, and prime current session with AWS ENV vars
 alias pull-all='for d in */; do cd $d; git stash; pull; cd ..; done' # Open each directory from my current folder, stash local changes, and pull remote
+alias status-all='for d in */; do cd $d; pwd; git status; cd ..; done' # Open each directory from my current folder and echo pwd plus the git status
+alias json-to-edn='pbpaste | jet --from json --to edn --keywordize' # Convert json in my copy buffer into edn
+alias bazel-test='bazel test $(bazel query "tests(//...)")' # Search for bazel targets named test, and execute those tests
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # heroku autocomplete setup
