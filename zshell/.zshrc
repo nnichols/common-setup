@@ -23,7 +23,7 @@ setopt hist_expire_dups_first
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/nnichols/.oh-my-zsh"
 
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=30
@@ -39,8 +39,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # Set personal aliases
-
-prompt_context(){}
 
 alias greps='grep -rHni --color' # Set grep to be recursive, case insensitive, print filenames + line numbers, and highlight matches in stdout
 alias stat='git status'
@@ -60,3 +58,6 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/nnichols/Library/Caches/heroku/autocomplete/zsh_
 
 # GPG stuff
 export GPG_TTY=$(tty)
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

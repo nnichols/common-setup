@@ -35,3 +35,11 @@ brew bundle dump
 ```bash
 brew upgrade --cask dbeaver-community
 ```
+
+## zsh
+
+### Install Powerlevel10k
+
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
