@@ -32,7 +32,7 @@ export UPDATE_ZSH_DAYS=30
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load?
-plugins=(git aws colored-man-pages command-not-found colorize terraform osx)
+plugins=(git aws bazel docker colored-man-pages command-not-found colorize terraform osx lein node npm npx nvm)
 
 source $ZSH/oh-my-zsh.sh
 
