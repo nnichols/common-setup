@@ -38,3 +38,6 @@
 
 [help]
 	autocorrect = 1
+
+[merge]
+	log = true

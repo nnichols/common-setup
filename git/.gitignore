@@ -1,0 +1,16 @@
+# Editor specific files
+*.calva
+*.cpcache
+*.vscode
+*.swp
+
+# OSX folder config
+*.DS_Store
+Desktop.ini
+
+# Image thumbnail cache
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
