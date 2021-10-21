@@ -46,6 +46,7 @@ alias status='git status'
 alias shove='git push -f'
 alias pull='git fetch --prune && git pull && git gc' # pull updates from remote, get rid of branches that have been deleted, and clean up the local repo copy
 alias repl='clojure -M:nrepl'
+alias ports='lsof -i -P | grep LISTEN' # List which applications have leases against which ports
 alias saml='saml2aws login && eval $(saml2aws script)' # Login to AWS with SAML provider, and prime current session with AWS ENV vars
 alias pull-all='for d in */; do cd $d; git stash; pull; cd ..; done' # Open each directory from my current folder, stash local changes, and pull remote
 alias status-all='for d in */; do cd $d; pwd; git status; cd ..; done' # Open each directory from my current folder and echo pwd plus the git status
