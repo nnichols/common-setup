@@ -52,6 +52,7 @@ alias pull-all='for d in */; do cd $d; git stash; pull; cd ..; done' # Open each
 alias status-all='for d in */; do cd $d; pwd; git status; cd ..; done' # Open each directory from my current folder and echo pwd plus the git status
 alias json-to-edn='pbpaste | jet --from json --to edn --keywordize' # Convert json in my copy buffer into edn
 alias bazel-test='bazel test $(bazel query "tests(//...)")' # Search for bazel targets named test, and execute those tests
+alias cowstats='history | awk \'{print $2}\' | awk \'BEGIN {FS="|"} {print $1}\' | sort | uniq -c | sort -rn | head -5 | cowsay ' # Make a cow say your most frequent commands
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # heroku autocomplete setup
