@@ -31,13 +31,19 @@
   enabled = true
 
 [pull]
-	rebase = false
+  rebase = false
 
 [branch]
-	sort = -committerdate
+  sort = -committerdate
 
 [help]
-	autocorrect = 1
+  autocorrect = 1
 
 [merge]
-	log = true
+  log = true
+	
+[init]
+  defaultBranch = main
+ 
+[push]
+  default = current
