@@ -1,0 +1,7 @@
+;; This belongs in ~/.config/clojure-lsp/config.edn
+{:log-path                  "/tmp/clojure-lsp.out"
+ :use-metadata-for-privacy? true
+ :add-missing               :never
+ :clean                     {:automatically-after-ns-refactor true
+                             :ns-inner-blocks-indentation     :same-lines
+                             :ns-import-classes-indentation   :same-line}}
