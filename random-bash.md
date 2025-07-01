@@ -36,6 +36,14 @@ brew bundle dump
 brew upgrade --cask dbeaver-community
 ```
 
+## Utilities
+
+### Write a random UUID to the copy buffer
+
+```bash
+uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | pbcopy # Random UUID
+```
+
 ## zsh
 
 ### Install Powerlevel10k
