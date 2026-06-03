@@ -3,7 +3,7 @@
   email = em . ail
 
 [color]
-  ui = always
+  ui = auto
 
 [color "branch"]
   current = green
@@ -41,9 +41,16 @@
 
 [merge]
   log = true
-	
+
 [init]
   defaultBranch = main
- 
+
 [push]
   default = current
+  autoSetupRemote = true
+
+[core]
+	excludesFile = ~/.gitignore
+
+[fetch]
+  prune = true
